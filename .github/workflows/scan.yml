@@ -1,0 +1,56 @@
+name: Actualizar y publicar Dublin Room Radar
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '12 7,8 * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: radar-pages
+  cancel-in-progress: false
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Control horario Dublin
+        id: clock
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          import os
+          print("scan=" + str(os.environ["EVENT_NAME"] == "workflow_dispatch" or (os.environ["EVENT_NAME"] == "schedule" and datetime.now(ZoneInfo("Europe/Dublin")).hour == 8)).lower())
+          PY
+      - name: Buscar anuncios
+        if: steps.clock.outputs.scan == 'true'
+        run: python radar.py
+      - name: Guardar nuevos datos
+        if: steps.clock.outputs.scan == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/listings.json data/sources.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Revisión diaria de habitaciones'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+      - uses: actions/deploy-pages@v4
+        id: deployment
