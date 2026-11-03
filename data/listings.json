@@ -1,0 +1,50 @@
+[
+  {
+    "id": "shanard",
+    "title": "Shanard Road — Santry",
+    "area": "D9",
+    "price_monthly": 823,
+    "source": "Rooms in Dublin",
+    "url": "https://roomsindublin.com/listing/single-room-11-4/",
+    "available": "Marzo 2027 según revisión anterior; verificar fecha exacta",
+    "march_status": "anunciado_marzo",
+    "room_type": "Privada, baño propio",
+    "costs": "40 €/mes adicionales; fianza 823 € anunciada",
+    "fees": "100 € de administración anunciados",
+    "transit_note": "Autobús hacia el centro, recorrido por verificar",
+    "score": 53,
+    "description": "Dato histórico. No equivale a reserva ni a disponibilidad confirmada."
+  },
+  {
+    "id": "royal",
+    "title": "Royal Canal Terrace — Phibsborough",
+    "area": "D7",
+    "price_monthly": 895,
+    "source": "Rooms in Dublin",
+    "url": "https://roomsindublin.com/listing/single-room-9-1/",
+    "available": "22 marzo 2027 (según revisión anterior)",
+    "march_status": "anunciado_marzo",
+    "room_type": "Privada, baño propio",
+    "costs": "40 €/mes adicionales; fianza 895 € anunciada",
+    "fees": "100 € de administración anunciados",
+    "transit_note": "Luas verde posiblemente conveniente, verificar trayecto a parada",
+    "score": 73,
+    "description": "Entrada tardía: requiere alojamiento puente en marzo. Dato histórico pendiente de reverificar."
+  },
+  {
+    "id": "botanic",
+    "title": "Glasnevin Hill — Botanic",
+    "area": "D9",
+    "price_monthly": 860,
+    "source": "Rooms in Dublin",
+    "url": "https://roomsindublin.com/listing/single-room-18-2/",
+    "available": "29 marzo 2027 (según revisión anterior)",
+    "march_status": "anunciado_marzo",
+    "room_type": "Privada",
+    "costs": "40 €/mes adicionales; fianza 860 € anunciada",
+    "fees": "100 € de administración anunciados",
+    "transit_note": "Conexión a Parnell por comprobar",
+    "score": 53,
+    "description": "Entrada tardía: requiere alojamiento puente en marzo. Dato histórico pendiente de reverificar."
+  }
+]
