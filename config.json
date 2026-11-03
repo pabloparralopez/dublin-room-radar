@@ -1,0 +1,12 @@
+{
+  "name": "Dublin Room Radar",
+  "arrival": "2027-03-01",
+  "minimum_until": "2027-06-30",
+  "ideal_monthly_eur": [
+    600,
+    1000
+  ],
+  "private_room_only": true,
+  "location": "Cualquier distrito de Dublin con buen acceso a Parnell Street y O'Connell Street; especialmente Luas Green Line y autobús directo; D9, D4 y demás códigos incluidos.",
+  "status_rule": "Solo avisar de nuevas habitaciones con marzo 2027 anunciado o aceptado; no confundir entrada inmediata con entrada en marzo."
+}
