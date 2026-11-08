@@ -1,11 +1,11 @@
 {
-  "last_checked": "2026-11-08T08:04:01+00:00",
+  "last_checked": "2026-11-08T08:53:31+00:00",
   "new_count": 0,
   "sources": [
     {
       "site": "Rooms in Dublin",
       "page": "https://roomsindublin.com/listings/?filter-title=March",
-      "checked_at": "2026-11-08T08:03:53+00:00",
+      "checked_at": "2026-11-08T08:53:24+00:00",
       "found": 0,
       "state": "sin resultados legibles",
       "note": ""
@@ -13,7 +13,7 @@
     {
       "site": "Daft Sharing",
       "page": "https://www.daft.ie/sharing/dublin",
-      "checked_at": "2026-11-08T08:03:55+00:00",
+      "checked_at": "2026-11-08T08:53:26+00:00",
       "found": 24,
       "state": "correcto",
       "note": ""
@@ -21,7 +21,7 @@
     {
       "site": "Rent.ie",
       "page": "https://www.rent.ie/rooms-to-rent/dublin/dublin/",
-      "checked_at": "2026-11-08T08:03:57+00:00",
+      "checked_at": "2026-11-08T08:53:28+00:00",
       "found": 0,
       "state": "error",
       "note": "RuntimeError: robots.txt HTTP 403, skipped"
@@ -29,7 +29,7 @@
     {
       "site": "MyHome Share",
       "page": "https://www.myhome.ie/rentals/dublin/share/shared-accommodation-in-dublin-county",
-      "checked_at": "2026-11-08T08:03:59+00:00",
+      "checked_at": "2026-11-08T08:53:29+00:00",
       "found": 0,
       "state": "sin resultados legibles",
       "note": ""
